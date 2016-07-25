@@ -1,6 +1,6 @@
-Bookmark Manager
+BookVault Manager
 -----------------
-Our Bookmark Manager is called BookVault
+BookVault Manager stores all your bookmarks in a single location for ease of access.
 
 User Stories
 -----------------
