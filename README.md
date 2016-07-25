@@ -12,6 +12,12 @@ I would like to see a list of links from the database
 
 ```
 As a BookVault user
+So that I can quickly find recently added links
+I want my links to be sorted in chronological order, with the most recent at the top
+```
+
+```
+As a BookVault user
 So that I can store new and interesting sites
 I would like to be able to add links to the database
 ```
