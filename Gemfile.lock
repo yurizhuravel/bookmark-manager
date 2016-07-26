@@ -79,6 +79,7 @@ GEM
       pkg-config (~> 1.1.7)
     parser (2.3.1.2)
       ast (~> 2.2)
+    pg (0.18.4)
     pkg-config (1.1.7)
     powerpack (0.1.1)
     rack (1.6.4)
@@ -136,6 +137,7 @@ DEPENDENCIES
   data_mapper
   database_cleaner
   dm-postgres-adapter
+  pg
   rake
   rspec
   rspec-sinatra
