@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BookVault bookmark manager</title>
+  </head>
+  <body>
+    <% if current_user %>
+      Welcome, <%= current_user.email %>
+    <% end %>
+    <!-- this calls this layout on all other pages -->
+    <%= yield %>
+  </body>
+</html>
