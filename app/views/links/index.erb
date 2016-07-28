@@ -1,11 +1,16 @@
-<h1> Links </h1>
+<div class="col-sm-6 col-sm-offset-3">
+  <h1 class="text-center">Links</h1>
 
-<ul id='links'>
-  <% @links.each do |link| %>
-    <li>
-      Title:  <%= link.title %>
-      URL:    <%= link.url %>
-      tags:   <%= link.tags.map(&:name).join(' ') %>
-    </li>
-  <% end %>
-</ul>
+  <ul id='links' class="list-group">
+    <% @links.each do |link| %>
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading">
+          <a href="<%= link.url %>" target="_blank"><%= link.title %></a>
+        </h4>
+        <p class="list-group-item-text">
+          <b>Tags:</b> <%= link.tags.map(&:name).join(' ') %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>

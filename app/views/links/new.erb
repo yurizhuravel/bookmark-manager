@@ -1,17 +1,22 @@
-<form action="/links" method="POST" >
+<div class="col-sm-6 col-sm-offset-3 well">
+  <h1 class="text-center">Add New Link</h1>
 
-  <label for="title"> Title:
-    <input type="text" name="title">
-  </label>
+  <form action="/links" method="POST" >
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input class="form-control" type="text" name="title">
+    </div>
 
-  <label for="url"> url:
-    <input type="text" name="url">
-  </label>
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <input class="form-control" type="text" name="url">
+    </div>
 
-  <label for="tags"> tag:
-    <input type="text" name="tags">
-  </label>
+    <div class="form-group">
+      <label for="tags">Tags <small>(Separate multiple tags by space)</small>:</label>
+      <input class="form-control" type="text" name="tags">
+    </div>
 
-  <p> <input type="submit" value="Add link" />
-  </p>
-</form>
+    <input class="btn btn-primary pull-right" type="submit" value="Add link" />
+  </form>
+</div>

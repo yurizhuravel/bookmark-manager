@@ -1,19 +1,22 @@
-<h1>Please sign up</h1>
+<div class="col-sm-6 col-sm-offset-3 well">
+  <h1 class="text-center">Please sign up</h1>
 
-<form action="/users" method="post">
+  <form action="/users" method="post">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input class="form-control" type="email" name="email" value='<%= @user.email %>' required>
+    </div>
 
-  <label for="email">Email:
-    <input type="email" name="email" value='<%= @user.email %>' required>
-  </label>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input class="form-control" type="password" name="password" required>
+    </div>
 
-  <label for="password">Password:
-    <input type="password" name="password" required>
-  </label>
+    <div class="form-group">
+      <label for="password_confirmation">Password confirmation:</label>
+      <input class="form-control" type="password" name="password_confirmation" required>
+    </div>
 
-  <label for="password_confirmation">Password confirmation:
-    <input type="password" name="password_confirmation" required>
-  </label>
-
-  <input type="submit" value="Sign up">
-
-</form>
+    <input class="btn btn-primary pull-right" type="submit" value="Sign up">
+  </form>
+</div>
